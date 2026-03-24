@@ -2,9 +2,10 @@
  * @type 创建型模式
  * @define 将一个复杂对象的构建过程与其表示相分离，从而可以创建具有不同表示形式的对象。
  * @instance 
- *  1/创建一个电脑组装工厂ComputerBuilder.cpp
- *  2/电脑中包含主要硬件 CPU类、主板board类、GPU类、内存RAM、固态硬盘HDD
- *  3/电脑有一个测评跑分benchMark()的功能，不同品级的硬件分数不同
+ *  1/创建一个电脑建造ComputerBuilder.cpp，还包括高端、中端、低端三个类，自动配置不同级别的配置
+ *  2/电脑Computer中包含主要硬件 CPU类、主板board类、内存RAM、固态硬盘HDD，有报价get_total_price()功能
+ *  3/电脑组装Assemble类，负责处理ComputerBuilder的所有操作，并且返回给客户一个Computer*的对象
+ *  4/工作人员收到Computer*的对象后，也可以进行setxxx（），更换配件
  */
 
 #include <iostream>
